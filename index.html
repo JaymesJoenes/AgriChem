@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АгроХім — Засоби Захисту Рослин</title>
+    <style>
+      :root {
+        --primary: #2e7d32;
+        --primary-hover: #1b5e20;
+        --bg: #f8f9fa;
+        --card-bg: #ffffff;
+        --text: #333333;
+        --text-muted: #666666;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      /* Hero Landing Section */
+      .hero {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80")
+            center/cover no-repeat;
+        color: #ffffff;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 25px auto;
+      }
+
+      .hero .btn-main {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 12px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .hero .btn-main:hover {
+        background-color: var(--primary-hover);
+      }
+
+      /* Catalog Section */
+      .container {
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: var(--primary);
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .product-card {
+        background: var(--card-bg);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .product-info {
+        padding: 20px;
+      }
+
+      .product-tag {
+        display: inline-block;
+        background-color: #e8f5e9;
+        color: var(--primary);
+        padding: 4px 8px;
+        font-size: 0.85rem;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      .product-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+
+      .product-description {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+      }
+
+      .product-footer {
+        padding: 20px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .price {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .btn-buy {
+        background-color: var(--primary);
+        color: #ffffff;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        transition: background 0.3s;
+      }
+
+      .btn-buy:hover {
+        background-color: var(--primary-hover);
+      }
+
+      /* Contact Footer */
+      footer {
+        background-color: #1b1b1b;
+        color: #ffffff;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 60px;
+      }
+
+      footer p {
+        margin-bottom: 10px;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Якісна Агрохімія для Вашого Врожаю</h1>
+      <p>
+        Засоби захисту рослин, гербіциди, фунгіциди та мінеральні добрива від
+        провідних виробників.
+      </p>
+      <a class="btn-main" href="#catalog">Переглянути Каталог</a>
+    </header>
+
+    <main class="container" id="catalog">
+      <h2 class="section-title">Каталог Продукції</h2>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-info">
+            <span class="product-tag">Гербіцид</span>
+            <h3 class="product-title">Агро-Захист Спектр</h3>
+            <p class="product-description">
+              Системний гербіцид суцільної дії для знищення широкого спектра
+              однорічних та багаторічних бур'янів.
+            </p>
+          </div>
+          <div class="product-footer">
+            <span class="price">450 грн / л</span>
+            <a class="btn-buy" href="tel:+380000000000">Замовити</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-info">
+            <span class="product-tag">Фунгіцид</span>
+            <h3 class="product-title">Ультра-Стоп Грибок</h3>
+            <p class="product-description">
+              Надійний препарат для профілактики та лікування грибкових
+              захворювань зернових та овочевих культур.
+            </p>
+          </div>
+          <div class="product-footer">
+            <span class="price">620 грн / л</span>
+            <a class="btn-buy" href="tel:+380000000000">Замовити</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-info">
+            <span class="product-tag">Інсектицид</span>
+            <h3 class="product-title">Біо-Антишкідник</h3>
+            <p class="product-description">
+              Швидкодіючий інсектицид для захисту садів та полів від
+              комах-шкідників на всіх стадіях розвитку.
+            </p>
+          </div>
+          <div class="product-footer">
+            <span class="price">380 грн / л</span>
+            <a class="btn-buy" href="tel:+380000000000">Замовити</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-info">
+            <span class="product-tag">Добриво</span>
+            <h3 class="product-title">НПК Рост-Актив</h3>
+            <p class="product-description">
+              Комплексне рідке добриво з мікроелементами для позакореневого
+              підживлення рослин.
+            </p>
+          </div>
+          <div class="product-footer">
+            <span class="price">290 грн / л</span>
+            <a class="btn-buy" href="tel:+380000000000">Замовити</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p><strong>Зв'яжіться з нами для консультації та замовлення:</strong></p>
+      <p>Телефон: +38 (000) 000-00-00 | Email: info@agrohim-example.ua</p>
+      <p>&copy; 2026 АгроХім. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>
